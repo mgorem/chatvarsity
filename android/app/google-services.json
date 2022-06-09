@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "875237977512",
+    "project_id": "chatvarsity",
+    "storage_bucket": "chatvarsity.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875237977512:android:59d42275c159127303419d",
+        "android_client_info": {
+          "package_name": "com.chatvarsity.chatvarsity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "875237977512-36v6jmorhc8oql2d58tk7ffvjnodhfa1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3ugkDdA7Q1t6ocodFsf6DJyjxDH6aHvM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "875237977512-36v6jmorhc8oql2d58tk7ffvjnodhfa1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
