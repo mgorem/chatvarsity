@@ -29,7 +29,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:875237977512:ios:c4876a4e8f0337c403419d</string>
+	<string>""Your_App_Id"</string>
 </dict>
 <!-- Google Sign-in Section -->
 <key>CFBundleURLTypes</key>
