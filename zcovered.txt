@@ -1,0 +1,67 @@
+// What I learnt from building this chat applicatiion:
+- Creating a new Flutter Application
+- Connecting to firebase services
+- Building UI for the chat Application:
+    -- Login page with firebase authentication
+    -- Creating a homepage with user contacts
+    -- Making a profile page that updates Firebase Firestore Information
+    -- Building the chat message page
+
+
+// Notes:
+
+
+----------Setup on Android Studio:
+- New flutter project on Android Studio Bumblebee
+- Confirm SDK Path
+- Enter Desired Project name(small letters)
+- Select all desired platforms (android, ios, web)
+- That creates a Flutter starter project.
+
+----------Connecting to Firebase Services:
+- navigate to firebase.google.com
+- Enter project name-disable google analytics, Create project.
+- Add firebase core plugin, i.e from root of the project run:
+    > firebase pub add firebase_core
+
+- Run Flutter CLI command. It depends on Firebase CLI (check https://firebase.google.com/docs/cli)
+  to setup firebase cli.
+    you can do:
+        > curl -sL https://firebase.tools | bash
+        
+        - This script automatically detects your os, 
+        downloads latest Firebase CLI release, enables the globally available firebase command.
+
+        > firebase login
+
+        - Login and test the firebase CLI
+
+        > firebase projects:list
+
+        - Test that the CLI is properly installed and accessing your account by listing your 
+        Firebase projects.
+
+        // Optional- Updating to the latest CLI version
+        > npm install -g firebase-tools
+- Run 
+    > dart pub global activate flutterfire_cli
+
+to activate flutterfire cli.
+
+- Run 
+    > flutterfire configure
+
+to choose the Firebase Project you've created.
+(This creates a firebase_options.dart file in project structure).
+
+- In main.dart file, you need to edit the main() function and ensure 
+  WidgetFlutterBinding is initialized and then initialize Firebase like this:
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  runApp(MyApp());
+}
+- Ready to use flutter and all its services.
